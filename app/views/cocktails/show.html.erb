@@ -3,6 +3,7 @@
   <ul>
     <li><%= dose.description %></li>
     <li><%= dose.ingredient.name %></li>
+    <li><%= link_to "Delete", dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } %></li>
   </ul>
 <% end %>
 
