@@ -1,13 +1,20 @@
-<h1>Cocktail list</h1>
+<h1 class="text-center">Cocktail list</h1>
 
 <% @cocktails.each do |cocktail| %>
   <ul>
+    <div class="card-product">
     <% if cocktail.photo.attached? %>
-      <%= cl_image_tag cocktail.photo.key, height: 50, width: 50, crop: :thumb %>
+      <%= cl_image_tag cocktail.photo.key, height: 100, width: 100, crop: :thumb %>
     <% end %>
-    <li><%= link_to cocktail.name,cocktail_path(cocktail.id) %></li>
+      <div class="card-product-infos">
+        <li><h1><%= link_to cocktail.name,cocktail_path(cocktail.id) %></h1></li>
+      </div>
+    </div>
   </ul>
 <% end %>
 
-<%= link_to "Add a new cocktail", new_cocktail_path %>
+<%= link_to "Add a new cocktail", new_cocktail_path, class: "btn btn-primary" %>
+
+
+
 

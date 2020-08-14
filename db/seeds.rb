@@ -20,9 +20,9 @@ json["drinks"].each do |ingredient|
   Ingredient.create(name: name)
 end
 
-Cocktail.create(name: "London Mule")
-Cocktail.create(name: "Amaretto Sour")
-Cocktail.create(name: "Gin Tonic")
-Cocktail.create(name: "Bloody Mary")
-Cocktail.create(name: "Tequila Sunrise")
+# Cocktail.create(name: "London Mule")
+# Cocktail.create(name: "Amaretto Sour")
+# Cocktail.create(name: "Gin Tonic")
+# Cocktail.create(name: "Bloody Mary")
+# Cocktail.create(name: "Tequila Sunrise")
 puts "seeding finished"
